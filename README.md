@@ -15,7 +15,7 @@
 ## 测试效果🚀
 其中 localhost 可修改成我的测试网址。
 
-### 1) 增 - CREATE
+### 1) 创建 - CREATE
 ```
 // CREATE
 $ curl localhost:8000/rustaceans
@@ -24,7 +24,7 @@ $ curl localhost:8000/rustaceans
 -X POST -d '{"name" : "Charles", "email" : "Charles.Ng.X@gmail.com"}'
 ```
 
-### 2) 查 - GET ALL
+### 2) 查询 - GET ALL
 ```
 // GET ALL
 $ curl localhost:8000/rustaceans
@@ -32,7 +32,7 @@ $ curl localhost:8000/rustaceans
 -H "Content-type: application/json"
 ```
 
-### 3) 改 - UPDATE
+### 3) 更新 - UPDATE
 ```
 // UPDATE
 $ curl localhost:8000/rustaceans/1
@@ -41,7 +41,7 @@ $ curl localhost:8000/rustaceans/1
 -X PUT -d '{"id" : 1, "name" : "Ch", "email" : "Charles.Ng.X@gmail.com"}'
 ```
 
-### 4) 删 - DELETE
+### 4) 删除 - DELETE
 // DELETE
 ```
 $ curl localhost:8000/rustaceans/1
