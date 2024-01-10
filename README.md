@@ -42,8 +42,8 @@ $ curl localhost:8000/rustaceans/1
 ```
 
 ### 4) 删除 - DELETE
-// DELETE
 ```
+// DELETE
 $ curl localhost:8000/rustaceans/1
 -H "Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
 -H "Content-type: application/json"
