@@ -60,8 +60,10 @@ $ sudo systemctl enable rocket-app.service
 $ sudo systemctl status rocket-app.service
 ```
 3. 开启 Rocket-App：
+```
 $ cd /var/www/rocket-app
 $ ROCKET_DATABASES={sqlite_path={url./database.sqlite}} ./rocket-app
+```
 
 ## Diesel
 - Diesel 官方指南：[Getting Started](https://diesel.rs/guides/getting-started)
