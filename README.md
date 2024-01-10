@@ -12,7 +12,7 @@
 - **免费域名申请网址**: [CloudNS](https://www.cloudns.net/)
 - **我的测试网址**: [rocketapp.cloudns.ch](https://rocketapp.cloudns.ch/)
 
-## 测试效果
+## 测试效果🚀
 其中 localhost 可修改成我的测试网址。
 
 ### 1) 增 - CREATE
@@ -76,10 +76,14 @@ $ diesel migration run --database-url=database.sqlite
 $ diesel migration redo --database-url=database.sqlite
 ```
 
-## Tips
+## Tips💡
 1. Dockerfile 需要根据你的操作系统进行相应的修改，当然你的操作系统环境也需要配置 Rust、Diesel、Sqlite 等。
 2. Amazon Linux 与其他操作系统下载 Nginx 有所不同，因此在 `/devops/nginx.conf` 中修改了服务器部分的代码。
+3. 代码提交时使用 [gitmoji](https://gitmoji.dev/)规范
+4. 遵守 GitHub Action 工作流规范
 
+## On More Thing🌹
+如果觉得这个项目有帮助，欢迎给个星星✨，感谢您的支持！
 
 
 
