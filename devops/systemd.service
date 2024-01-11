@@ -10,7 +10,7 @@ Environment="ROCKET_ENV=prod"
 Environment="ROCKET_ADDRESS=127.0.0.1"
 Environment="ROCKET_PORT=8000"
 Environment="ROCKET_DATABASE={sqlite={url=./database.sqlite}}"
-ExecStart=/var/www/rocket-app/rocket-app
+ExecStart=/bin/sh -c 'ROCKET_DATABASES="{sqlite={url=./database.sqlite}}" /var/www/rocket-app/rocket-app'
 
 [Install]
 WantedBy=multi-user.target
