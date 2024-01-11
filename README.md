@@ -52,7 +52,7 @@ $ curl localhost:8000/rustaceans/1
 
 ## Amazon Linux 操作篇
 1. 需要配置 Rust、Diesel、Sqlite、Nginx、CertBot 等。
-2. 配置 `rocket-app.service`:
+2. 配置 `rocket-app.service` (将本地的systemd.service文件复制到`/etc/systemd/system/rocket-app.service`):
 ```
 $ sudo vim /etc/systemd/system/rocket-app.service
 $ sudo systemctl start rocket-app.service
@@ -81,6 +81,11 @@ $ diesel migration redo --database-url=database.sqlite
 2. Amazon Linux 与其他操作系统下载 Nginx 有所不同，因此在 `/devops/nginx.conf` 中修改了服务器部分的代码。
 3. 代码提交时使用 [gitmoji](https://gitmoji.dev/)规范
 4. 遵守 GitHub Action 工作流规范
+5. 发现amazon linux下 `/etc/systemd/system/rocket-app.service`不运行，现已在本地`/devops/systemd.service`文件修改，保持与远程服务器的文件一致，紧接着run以下代码：
+```
+sudo systemctl daemon-reload
+sudo systemctl restart rocket-app.service
+```
 
 ## On More Thing🌹
 如果觉得这个项目有帮助，欢迎给个星星✨，感谢您的支持！
